@@ -1,0 +1,30 @@
+mergeSort(arr)
+    firstHalf
+    secondHalf
+    if arr.length/2 < 1
+        return arr 
+    else
+        firstHalf = mergeSort(arr[1...n/2])
+        secondHalf = mergeSort(arr[n/2+1...n])
+    end
+    const sortedArr = merge(firstHalf, secondHalf)
+    return sortedArr
+end
+
+merge(arr1, arr2)
+    let sorted = []
+    while (arr1.length > 0 and arr2.length > 0)
+        if arr1[0] > arr2[0]
+            sorted.push(arr2.shift())
+        else 
+            sorted.push(arr1.shift())
+        end
+    end
+    if arr1.length == 0 
+        sorted.push(...arr2)
+    else 
+        sorted.push(...arr1)
+    end
+    return sorted 
+end
+    
