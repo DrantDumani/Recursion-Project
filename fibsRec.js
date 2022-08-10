@@ -7,7 +7,8 @@ function fibsReq(num){
         return [0]
     }
     else {
-        return arr.concat(fibsReq(num - 1), fibsReq(num - 1)[num - 2] + fibsReq(num - 1)[num - 3])
+        const resArr = fibsReq(num-1)
+        return arr.concat(resArr, resArr[num - 2] + resArr[num - 3])
     }
 }
 

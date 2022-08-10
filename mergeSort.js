@@ -27,5 +27,5 @@ function mergeSort(arr) {
     return sortedArr;
 }
 
-const testArr = [300, 20, 5, 8, 67, 4, 82, 2,10, 91, 13]
-console.log(mergeSort(testArr))
+const testArr = [300, 20, 5, 8, 67, 4, 82, 2, 10, 91, 13];
+console.log(mergeSort(testArr));
